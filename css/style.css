@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&display=swap");
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #334756;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+.container {
+  text-align: center;
+  min-height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 8vh 78vh 8vh;
+  grid-row-gap: 10px;
+  width: 100%;
+}
+
+.head {
+  background-color: white;
+  text-align: center;
+}
+.foot {
+    font-size: xx-small;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.head h2 {
+  font-family: "Merriweather", serif;
+  text-shadow: 0 1.5px 1px gray;
+}
+
+
+.todo-body {
+  font-family: "Merriweather Sans", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.add-todo {
+  margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-text {
+    height: 40px;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    background-color: #00b3d6;
+    border-radius: 60px;
+    box-shadow: 0 2px 3px #00596b;
+}
+
+.add-text::placeholder {
+    color : white;
+}
+
+.add-button {
+    margin: 10px 0px 0px 0px;
+    height: 40px;
+    width: 80px;
+    background-color: #FF4C29;
+    font-size: 14px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px #941800;
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #de2400;
+}
+
+.card {
+    display: flex;
+    height: 40px;
+    width: 80vw;
+    max-width: 1000px;
+    background-color: orangered;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto 20px auto;
+    padding: 0 10px 0 25px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px brown;
+}
+
+.card h3 {
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
