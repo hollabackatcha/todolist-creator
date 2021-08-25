@@ -65,28 +65,42 @@ button {
     text-align: center;
     background-color: #00b3d6;
     border-radius: 60px;
-    box-shadow: 0 2px 3px #00596b;
+    box-shadow: 0 0px 4px #00596b;
+    transition: 250ms;
+}
+
+.add-text:hover, .add-text:active {
+  background-color: #20daff;
+  color: black;
+  box-shadow: 0 0 4px #00accf;
 }
 
 .add-text::placeholder {
     color : white;
+    transition: 150ms;
+}
+
+.add-text:hover::placeholder {
+  color: black;
 }
 
 .add-button {
-    margin: 10px 0px 0px 0px;
-    height: 40px;
+    margin: 15px 0px 0px 0px;
+    height: 35px;
     width: 80px;
     background-color: #FF4C29;
     font-size: 14px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 2px 4px #941800;
+    box-shadow: 0 0px 4px #941800;
     transition: 100ms;
     cursor: pointer;
+    padding: 5px;
 }
 
 .add-button:hover {
-  background-color: #de2400;
+  background-color: #df2500;
+  box-shadow: 0 0 4px #a71b00;
 }
 
 .card {
@@ -94,18 +108,22 @@ button {
     height: 40px;
     width: 80vw;
     max-width: 1000px;
-    background-color: orangered;
+    background-color: #334756;
     justify-content: space-between;
     align-items: center;
     margin: 50px auto 20px auto;
     padding: 0 10px 0 25px;
     color: white;
     border-radius: 5px;
-    box-shadow: 0 3px 4px brown;
+    box-shadow: 0 3px 4px darkslateblue;
 }
 
 .card h3 {
   font-size: 14px;
   font-weight: 200;
   text-transform: capitalize;
+}
+
+.card button:hover {
+  color: red;
 }
